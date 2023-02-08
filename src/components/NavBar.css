@@ -14,28 +14,26 @@ nav.navbar.scrolled {
     padding: 0px 0;
     background-color: #000000;
 }
-/************ Define o tamanho do texto no canto esquerdo ************/
+
+/************ Define o tamanho da logo ************/
 nav.navbar a.navbar-brand {
-    width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;   
+    width: 10%;  
 }
 
-
+/************ Define o tamanho das letras dos links escritos ************/
 nav.navbar .navbar-nav .nav-link.navbar-link {
-    font-weight: 500;
-    color: #b30000 !important;
+    font-weight: 400;
+    color: #fff !important;
     letter-spacing: 0.8px;
     padding: 0 25px;
-    font-size: 30px;
+    font-size: 18px;
     opacity: 0.75;
 }
-
-/* nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+/************ Aplica um leve hover nas letras ************/
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
-} */
+}
 
 /************ O Span fica alinhado lado a lado e centralizdo ************/
 span.navbar-text {
@@ -100,30 +98,35 @@ span.navbar-text {
     background-color: transparent;
     transition: 0.3s ease-in-out;
 }
+/************ !! VERIFICAR PORQUE A ANIMAÇÃO DO BOTÃO NÃO ESTA FUNCIONANDO COMO DEVERIA !! ************/
 
+/************ Define uma prioridade para o span ************/
 .navbar-text button span {
   z-index: 1;
 }
 
+/************ Area que volta na animação do botão ************/
 .navbar-text button::before {
   content: "";
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #eb0808;
+  background-color: #ffffff;
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 
+/************ Enquanto o mouse estiver em cima a letra fica cinza ************/
 .navbar-text button:hover {
   color: #121212;
 }
   
+/************ Tamanho da area branca que sobrepoe o botao ************/
 .navbar-text button:hover::before {
 	content: "";
-	width: 50%;
+	width: 100%;
 	height: 100%;
     position: absolute;
 }

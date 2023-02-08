@@ -1,0 +1,22 @@
+
+/* BackGround com a imagem na tela toda com padding na esqueda e direita */
+.fundo{
+    margin-top: 0;
+    padding: 260px 0 100px 0;
+    background-image: url('../assets/img/fundo.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Formatação da label */
+.fundo .tagline{
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90.21deg, rgba(136, 136, 136, 0.5) -5.91%, rgba(253, 123, 2, 0.5) 111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+}

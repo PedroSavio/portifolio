@@ -2,16 +2,16 @@ import { useEffect, useState } from 'react';
 import {Container, Nav, Navbar} from 'react-bootstrap';
 import './NavBar.css';
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import navIcon4 from '../assets/img/nav-icon4.svg';
+import logo from '../assets/img/Logo.png'
 
 function NavBar() {
     return (
         <Navbar expand="md">
             <Container>
-                <Navbar.Brand href="#/" id='card' className='flip'>
-                <span className='vvd-text'> Sávio Dev </span>
+                <Navbar.Brand href="#/">
+                    <img src={logo} alt='Logo'/>
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -20,9 +20,9 @@ function NavBar() {
 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#skills">Skills</Nav.Link>
-                        <Nav.Link href="#projects">Projects</Nav.Link>
+                        <Nav.Link className='navbar-link' href="#home">Home</Nav.Link>
+                        <Nav.Link className='navbar-link' href="#skills">Skills</Nav.Link>
+                        <Nav.Link className='navbar-link' href="#projects">Projects</Nav.Link>
                     </Nav>
                     <span className='navbar-text'>
                         <div className='social-icon'>
@@ -37,7 +37,7 @@ function NavBar() {
                             </a>
                         </div>
                         <button className='vvd'>
-                            <span> BURACO NEGRO </span>
+                            <span> Entrar em contato! </span>
                         </button>
                     </span>
                 </Navbar.Collapse>
