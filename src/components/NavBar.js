@@ -23,6 +23,7 @@ function NavBar() {
                         <Nav.Link className='navbar-link' href="#home">Home</Nav.Link>
                         <Nav.Link className='navbar-link' href="#skills">Skills</Nav.Link>
                         <Nav.Link className='navbar-link' href="#projects">Projects</Nav.Link>
+                        <Nav.Link className='navbar-link' href="#services">Services</Nav.Link>
                     </Nav>
                     <span className='navbar-text'>
                         <div className='social-icon'>
