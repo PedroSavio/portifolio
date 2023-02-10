@@ -160,7 +160,7 @@ function Skills() {
                                                     <span className='skills_number'>100%</span>
                                                 </div>
                                                 <div className='skills_bar'>
-                                                    <span className='skills_percentage skills_css'></span>
+                                                    <span className='skills_percentage skills_selenium'></span>
                                                 </div>
                                                 <div className='skills_titles'>
                                                     <h3 className='skills_name'>Machine Learning</h3>
