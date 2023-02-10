@@ -2,8 +2,8 @@ import { Container, Row, Col } from "react-bootstrap"
 import {Download} from 'react-bootstrap-icons'
 import { useEffect, useState } from "react"
 
-import './Fundo.css';
-import fotoFrente from '../assets/img/foto-frente.png';
+import './style.css';
+import fotoFrente from '../../assets/img/foto-frente.png';
 
 export const Fundo = () => {
     

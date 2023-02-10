@@ -3,7 +3,7 @@
 .fundo{
     margin-top: 0;
     padding: 260px 0 100px 0;
-    background-image: url('../assets/img/nebulosa2.png');
+    background-image: url('../../assets/img/nebulosa2.png');
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,6 +20,7 @@
     margin-bottom: 16px;
     display: inline-block;
 }
+
 /* Formatação da apresentação, tamanho da letra e espaçamento */
 .fundo h1 {
     font-size: 65px;
@@ -29,6 +30,7 @@
     margin-bottom: 20px;
     display: block;
 }
+
 /* Formatação do paragrafo com texto */
 .fundo p {
     color: #B8B8B8;
@@ -48,6 +50,7 @@
     display: flex;
     align-items: center;
 }
+
 /* Formatação do componente importado pelo bootstrap icon */
 .fundo button svg {
     font-size: 25px;

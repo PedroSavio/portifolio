@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import {Container, Nav, Navbar} from 'react-bootstrap';
-import './NavBar.css';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-import navIcon4 from '../assets/img/nav-icon4.svg';
-import logo from '../assets/img/Logo.png'
+
+import './style.css';
+import navIcon1 from '../../assets/img/nav-icon1.svg';
+import navIcon3 from '../../assets/img/nav-icon3.svg';
+import navIcon4 from '../../assets/img/nav-icon4.svg';
+import logo from '../../assets/img/Logo.png'
 
 function NavBar() {
     return (
@@ -20,10 +21,10 @@ function NavBar() {
 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link className='navbar-link' href="#home">Home</Nav.Link>
-                        <Nav.Link className='navbar-link' href="#skills">Skills</Nav.Link>
-                        <Nav.Link className='navbar-link' href="#projects">Projects</Nav.Link>
-                        <Nav.Link className='navbar-link' href="#services">Services</Nav.Link>
+                        <Nav.Link className='navbar-link' href="#home">Inicio</Nav.Link>
+                        <Nav.Link className='navbar-link' href="#skills">Habilidades</Nav.Link>
+                        <Nav.Link className='navbar-link' href="#projects">Projetos</Nav.Link>
+                        <Nav.Link className='navbar-link' href="#services">Serviços</Nav.Link>
                     </Nav>
                     <span className='navbar-text'>
                         <div className='social-icon'>

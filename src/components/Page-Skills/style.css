@@ -1,0 +1,148 @@
+/* Circulo de transição com o titulo */
+/* Inicio */
+.skill {
+    padding: 0 0 50px 0;
+    position: relative;
+}
+
+.skill-box{
+    background: #151515;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+}
+
+.skill-span {
+    font-size: 20px;
+}
+/* Fim */
+
+/* Container com todos os atributos */
+/* Inicio */
+/* Distanciamento de cima */
+.skills_content{
+    margin-top: 50px;
+}
+.skills_container{
+    display: flex;
+    margin-top: 20px;
+    row-gap: 0;
+}
+
+/* cabeçalho com os itens lado lado alinhados ao centro */
+.skills_header{
+    display: flex;
+    align-self: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Tamanho icone de seta e icone representativo */
+.skills_arrow,
+.skills_icon{
+    font-size: 2rem;
+}
+/* Espaçamento da letra */
+.skills_icon{
+    margin-right: 1.5rem;
+}
+
+/* Espaçamento da seta pra label */
+.skills_arrow{
+    margin-left: auto;
+    transition: .4s;
+}
+
+/* Espaçamento da seta pra label */
+.skills_list{
+    row-gap: 20px !important;
+}
+
+.skills_title{
+    font-size: 1.300rem;
+}
+
+.skills_titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    margin-top: 20px;
+}
+
+.skills_subtitle{
+    font-size: .913rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.skills_name{
+    font-size: .938rem;
+    font-weight: 500;
+}
+
+.skills_bar,
+.skills_percentage{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills_bar{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.skills_percentage{
+    display: block;
+    background: rgba(1, 11, 158, 0.568);
+}
+
+.skills_html{
+    width: 100%;
+}
+.skills_css{
+    width: 70%;
+}
+.skills_js{
+    width: 80%;
+}
+.skills_react{
+    width: 100%;
+}
+.skills_node{
+    width: 70%;
+}
+.skills_laravel{
+    width: 100%;
+}
+.skills_django{
+    width: 60%;
+}
+.skills_scrapy{
+    width: 100%;
+}
+.skills_selenium{
+    width: 100%;
+}
+.skills_machinelearning{ 
+    width: 40%;
+}
+.skills_postgres{ 
+    width: 60%;
+}
+.skills_mysql{ 
+    width: 70%;
+}
+
+.skills_close .skills_list{
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.skills_open .skills_list{
+    height: max-content;
+    overflow: 2.5rem;
+}
+
+.skills_open .skills_arrow{
+    transform: rotate(180deg);
+}
