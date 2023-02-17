@@ -12,7 +12,8 @@ nav.navbar {
 
 nav.navbar.scrolled {
     padding: 0px 0;
-    background-color: #000000;
+    background: linear-gradient(90.21deg, rgba(0, 0, 0, 0.5) -5.91%, rgba(0, 6, 85, 0.5) 111.58%);
+    transition:  0.5s ease-in-out;
 }
 
 /************ Define o tamanho da logo ************/

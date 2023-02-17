@@ -1,0 +1,41 @@
+.projects {
+    background-color: black;
+    padding: 80px 0;
+    position: relative;
+}
+.header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.header h2{
+    font-size: 45px;
+	font-weight: 800;
+}
+.header span{
+    font-size: 25px;
+}
+
+.content {
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    
+    width:800px;
+}
+.carousel h2 {
+    font-size: 30px;
+    font-weight: 800;
+    padding-left:20px;
+}
+.content img{
+    width: 400px;
+    border-radius: .5rem;
+    display: block;
+}
+
+.content_carousel{
+    display: flex;
+}

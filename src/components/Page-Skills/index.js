@@ -1,4 +1,3 @@
-import { click } from '@testing-library/user-event/dist/click';
 import { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Braces, ArrowDownShort, Server, HddNetwork, FiletypePy } from 'react-bootstrap-icons'
@@ -19,16 +18,16 @@ function Skills() {
     const [selectedPannel, setSelectedPannel] = useState(null)
 
     useEffect(() => {
-        const pannels = Object.keys(statePannels)
-        const currentState = [pannels]
+        let pannels = Object.keys(statePannels)
+        let currentState = [pannels]
         
         pannels.map((p) => {
             p != selectedPannel ? currentState[selectedPannel] = !statePannels[selectedPannel] : currentState[selectedPannel] = false
         })
+        console.log("Estou clicando")
         setStatePannels(currentState)
     },[selectedPannel])
     
-
 
     return (
         <section className='skill' id='skills'>
