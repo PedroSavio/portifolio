@@ -99,7 +99,6 @@ span.navbar-text {
     background-color: transparent;
     transition: 0.3s ease-in-out;
 }
-/************ !! VERIFICAR PORQUE A ANIMAÇÃO DO BOTÃO NÃO ESTA FUNCIONANDO COMO DEVERIA !! ************/
 
 /************ Define uma prioridade para o span ************/
 .navbar-text button span {

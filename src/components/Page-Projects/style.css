@@ -14,28 +14,71 @@
 .header span{
     font-size: 25px;
 }
-
 .content {
     padding: 0 1.5rem;
     display: flex;
     justify-content: center;
 }
-
 .carousel {
-    
-    width:800px;
+    width: 1400px;
+    display: flex;
 }
+
+.carousel-inner {
+    margin-left: 8rem;
+    margin-right: 9rem;
+    margin-bottom: 3rem ;
+}
+
 .carousel h2 {
     font-size: 30px;
     font-weight: 800;
-    padding-left:20px;
-}
-.content img{
-    width: 400px;
-    border-radius: .5rem;
-    display: block;
 }
 
 .content_carousel{
     display: flex;
+}
+
+.corousel_text button{
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #151515;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.corousel_text svg{
+    margin-left: 0.5rem;
+}
+
+.corousel_text button:hover{
+    color: rgb(0, 118, 197);
+    background: linear-gradient(90.21deg, rgba(17, 3, 221, 0.5) -5.91%, rgba(10, 10, 10, 0.5) 111.58%);
+    transition: 0.5s ease-in-out;
+}
+
+.corousel_text{
+    margin-left: 2.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem
+}
+
+.content_carousel img{
+    width: 400px;
+    border-radius: .5rem;
+}
+
+.content_carousel p{
+    font-size: 20px;
+    text-align: justify;
 }
