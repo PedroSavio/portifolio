@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap"
 import {Download} from 'react-bootstrap-icons'
 import { useEffect, useState } from "react"
+import pdf from '../../assets/img/CurrículoNovo.pdf'
 
 import './style.css';
 import fotoFrente from '../../assets/img/foto-frente.png';
@@ -101,10 +102,12 @@ export const Fundo = () => {
                             criar soluções úteis para problemas
                             complexos.`}
                         </p>
-                        <button onClick={() => console.log('Conectei')}>
-                            {`Baixar CV`}
-                            <Download />
-                        </button>
+                            <button>
+                                {`Baixar CV`}
+                                <a href={pdf} download='CurrículoPedroSavio'>
+                                    <Download />
+                                </a>
+                            </button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={fotoFrente} alt="Minha imagem de braço cruzado" />
