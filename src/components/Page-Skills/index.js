@@ -20,11 +20,10 @@ function Skills() {
     useEffect(() => {
         let pannels = Object.keys(statePannels)
         let currentState = [pannels]
-        console.log("PAA 1",  currentState, pannels)
         
         pannels.map((p) => {
-            p == selectedPannel ? currentState[selectedPannel] = !statePannels[selectedPannel] : currentState[p] = statePannels[p]
-            console.log("PAA",  selectedPannel)
+            p != selectedPannel ? currentState[selectedPannel] = !statePannels[selectedPannel] : currentState[selectedPannel] = statePannels[selectedPannel]
+            console.log("PAA",  p != selectedPannel)
         })
         console.log("Estou clicando", )
         setStatePannels(currentState)
