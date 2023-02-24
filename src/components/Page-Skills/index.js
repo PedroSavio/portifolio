@@ -19,15 +19,19 @@ function Skills() {
 
     useEffect(() => {
         let pannels = Object.keys(statePannels)
-        let currentState = [pannels]
+        let currentState = pannels
         console.log("PAA 1",  currentState, pannels)
         
         pannels.map((p) => {
-            p == selectedPannel ? currentState[selectedPannel] = !statePannels[selectedPannel] : currentState[p] = statePannels[p]
+            p == selectedPannel ? 
+            currentState[selectedPannel] = !statePannels[selectedPannel] : currentState[p] = statePannels[p]
             console.log("PAA",  selectedPannel)
         })
         console.log("Estou clicando", )
-        setStatePannels(currentState)
+        setStatePannels({
+            ...statePannels,
+            ...currentState
+        })
     },[selectedPannel])
     
 
@@ -54,7 +58,11 @@ function Skills() {
                                                 <h1 className='skills_title'>Front-end developer</h1>
                                                 <span className='skills_subtitle'> 1 ano </span>
                                             </div>
-                                            <i className='skills_arrow'  onClick={() => setSelectedPannel('painel1')}>
+                                            <i className='skills_arrow'  onClick={() => setStatePannels({
+                                                ...statePannels,
+                                                painel1: !statePannels['painel1']
+                    
+                                            })}>
                                                 <ArrowDownShort />
                                             </i>
                                         </div>
@@ -102,7 +110,11 @@ function Skills() {
                                                 <h1 className='skills_title'>Back-end developer</h1>
                                                 <span className='skills_subtitle'> 2 ano+ </span>
                                             </div>
-                                            <i className='skills_arrow' onClick={() => setSelectedPannel('painel2')}>
+                                            <i className='skills_arrow' onClick={() => setStatePannels({
+                                                ...statePannels,
+                                                painel2: !statePannels['painel2']
+                    
+                                            })}>
                                                 <ArrowDownShort />
                                             </i>
                                         </div>
@@ -143,7 +155,11 @@ function Skills() {
                                                 <h1 className='skills_title'>Python Scrapping</h1>
                                                 <span className='skills_subtitle'> 3 anos+ </span>
                                             </div>
-                                            <i className='skills_arrow' onClick={() => setSelectedPannel('painel3')}>
+                                            <i className='skills_arrow' onClick={() => setStatePannels({
+                                                ...statePannels,
+                                                painel3: !statePannels['painel3']
+                    
+                                            })}>
                                                 <ArrowDownShort />
                                             </i>
                                         </div>
@@ -184,7 +200,11 @@ function Skills() {
                                                 <h1 className='skills_title'> Data Science</h1>
                                                 <span className='skills_subtitle'> 1 ano+ </span>
                                             </div>
-                                            <i className='skills_arrow' onClick={() => setSelectedPannel('painel4')}>
+                                            <i className='skills_arrow' onClick={() => setStatePannels({
+                                                ...statePannels,
+                                                painel4: !statePannels['painel4']
+                    
+                                            })}>
                                                 <ArrowDownShort />
                                             </i>
                                         </div>
