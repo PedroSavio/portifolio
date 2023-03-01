@@ -3,9 +3,9 @@ import {Container, Nav, Navbar} from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import './style.css';
 import navIcon1 from '../../assets/img/nav-icon1.svg';
-import navIcon3 from '../../assets/img/nav-icon3.svg';
 import navIcon4 from '../../assets/img/nav-icon4.svg';
 import logo from '../../assets/img/Logo.png'
+import { TelephoneForwardFill } from 'react-bootstrap-icons'
 import {
     BrowserRouter as Router
 } from "react-router-dom";
@@ -47,14 +47,14 @@ function NavBar() {
                         </Nav>
                         <span className='navbar-text'>
                             <div className='social-icon'>
-                                <a href='https:/linkedin.com/in/pedro-sávio-souza'>
+                                <a href='https:/linkedin.com/in/pedro-sávio-souza' target="_blank">
                                     <img src={navIcon1} alt='' />
                                 </a>
-                                <a href='https://github.com/PedroSavio'>
+                                <a href='https://github.com/PedroSavio' target="_blank">
                                     <img src={navIcon4} alt='' />
                                 </a>
-                                <a href='https://www.instagram.com/savio.souza_/'>
-                                    <img src={navIcon3} alt='' />
+                                <a href='tel:+5579999026900' target="_blank">
+                                    <TelephoneForwardFill color='White' size={16} className= 'mt-1' />
                                 </a>
                             </div>
                             <HashLink to='#contato'>
