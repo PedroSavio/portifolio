@@ -38,7 +38,7 @@ function Contato() {
         setBotaoEnvio("Send");
         let result = await response.json();
         setContato(formContato);
-        if (result.code == 200) {
+        if (result.code === 200) {
           setStatus({ succes: true, message: 'Message sent successfully'});
         } else {
           setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
@@ -78,7 +78,7 @@ function Contato() {
                                     {
                                         status.mensagem && 
                                         <Col>
-                                            <p className={status.sucess == false ? "danger" : "sucess"}>{status.mensagem}</p>
+                                            <p className={status.sucess === false ? "danger" : "sucess"}>{status.mensagem}</p>
                                         </Col>
                                     }
                                 </Row>
