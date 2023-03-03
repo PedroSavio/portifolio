@@ -11,9 +11,8 @@
 }
 
 .footer-link{
-    font-weight: 400;
-    color: #fff !important;
     padding-top: 1.4rem;
+    opacity: 0.75;
 }
 
 .footer-link a{
@@ -21,6 +20,7 @@
     font-size: 20px;
     color: #fff !important;
     margin-right: 3rem;
+    opacity: 1;
 }
 
 .footer-link:hover{
