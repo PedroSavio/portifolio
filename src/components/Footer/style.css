@@ -1,7 +1,60 @@
+.footer{
+    padding-top: 1rem;
+}
+
+.footer .row{
+    padding: 1rem 0 3rem;
+}
+
+.footer-logo{
+    width: 40%;
+}
+
 .footer-link{
     font-weight: 400;
     color: #fff !important;
+    padding-top: 1.4rem;
+}
+
+.footer-link a{
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff !important;
+    margin-right: 3rem;
+}
+
+.footer-link:hover{
+    color: #fff !important;
+}
+
+span.social-text {
     display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
+    justify-content: center;
+}
+
+.footer-social {
+    display: inline-block;
+    margin-left: 14px;
+}
+
+.footer-social a{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.footer-social a svg,
+.footer-social a img {
+	width: 50%;
+    background-color: transparent;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+
+.footer-social a svg{
+    margin-top:5px;
 }

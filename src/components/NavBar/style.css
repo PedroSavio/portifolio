@@ -89,6 +89,10 @@ span.navbar-text {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
+.social-icon a svg{
+    margin-top:4px;
+}
+
 /************ Tamanho da letra e do botão, cor da letra, borda e espaçamento do botão, posicionamento pra ficar lado a lado com os outros itens da NAV ************/
 .navbar-text button {
     font-weight: 700;

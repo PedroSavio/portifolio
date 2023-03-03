@@ -54,7 +54,7 @@ function NavBar() {
                                     <img src={navIcon4} alt='' />
                                 </a>
                                 <a href='tel:+5579999026900' target="_blank">
-                                    <TelephoneForwardFill color='White' size={16} className= 'mt-1' />
+                                    <TelephoneForwardFill color='White' size={15} />
                                 </a>
                             </div>
                             <HashLink to='#contato'>

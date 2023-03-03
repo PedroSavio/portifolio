@@ -17,21 +17,23 @@ function Footer() {
             <Container>
                 <Row>
                     <Col sm={4}>
-                        <img src={logo}/>
+                        <img className='footer-logo' src={logo}/>
                         <div className='footer-text'>
                             <h2>Desenvolvedor FullStack</h2>
                         </div>
                     </Col>
 
                     <Col sm={4}>
-                            <a className='footer-link' href="#home">Inicio</a>
-                            <a className='footer-link' href="#skills">Habilidades</a>
-                            <a className='footer-link' href="#projects">Experiências</a>
+                        <div className='footer-link'>
+                            <a href="#home">Inicio</a>
+                            <a href="#skills">Habilidades</a>
+                            <a href="#projects">Experiências</a>
+                        </div>
                     </Col>
 
                     <Col sm={4}>
-                        <span className='navbar-text'>
-                                <div className='social-icon'>
+                        <span className='social-text'>
+                                <div className='footer-social'>
                                     <a href='https:/linkedin.com/in/pedro-sávio-souza' target="_blank">
                                         <img src={navIcon1} alt='' />
                                     </a>
@@ -39,7 +41,7 @@ function Footer() {
                                         <img src={navIcon4} alt='' />
                                     </a>
                                     <a href='tel:+5579999026900' target="_blank">
-                                        <TelephoneForwardFill color='White' size={16} className= 'mt-1' />
+                                        <TelephoneForwardFill color='White' size={28}/>
                                     </a>
                                 </div>
                         </span>
