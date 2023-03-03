@@ -3,6 +3,7 @@ import { Link45deg } from 'react-bootstrap-icons';
 import { HashLink } from 'react-router-hash-link';
 import fotoFeedback from '../../assets/img/FotoFeedback.png'
 import fotoLogin from '../../assets/img/FotoLogin.png'
+import fotoNeurometa from '../../assets/img/neurometaLogo.jpg'
 
 import {
     BrowserRouter as Router
@@ -39,6 +40,7 @@ function Projects() {
                                 </div>
                             </div>
                         </Carousel.Item>
+
                         <Carousel.Item>
                             <div className='content_carousel'>
                                 <div>
@@ -50,6 +52,25 @@ function Projects() {
                                         Desenvolvido em ReactJS, NodeJS, MySQL.
                                     </p>
                                     <HashLink to='https://github.com/PedroSavio/DesafioFrexco'>
+                                        <button>
+                                            <span>Ver mais</span>
+                                            <Link45deg size={25} />
+                                        </button>
+                                    </HashLink>
+                                </div>
+                            </div>
+                        </Carousel.Item>
+
+                        <Carousel.Item>
+                            <div className='content_carousel'>
+                                <div>
+                                    <img src={fotoNeurometa} alt='imagem3'/>
+                                </div>
+                                <div className='corousel_text'>
+                                    <h2>Desenvolvedor Back-end</h2>
+                                    <p>Startup com projeto social de saúde mental, em que utilizei as tecnologias Node.js/Express, TypeScript e MySQL.
+                                    </p>
+                                    <HashLink to='https:/linkedin.com/in/pedro-sávio-souza'>
                                         <button>
                                             <span>Ver mais</span>
                                             <Link45deg size={25} />

@@ -17,18 +17,28 @@ function Footer() {
             <Container>
                 <Row>
                     <Col sm={4}>
-                        <img className='footer-logo' src={logo}/>
                         <div className='footer-text'>
-                            <h2>Desenvolvedor FullStack</h2>
+                            <a href='#home'>
+                                <span>Pedro Sávio</span>
+                                <h2>Desenvolvedor FullStack</h2>
+                            </a>
                         </div>
                     </Col>
 
                     <Col sm={4}>
-                        <div className='footer-link'>
-                            <a href="#home">Inicio</a>
-                            <a href="#skills">Habilidades</a>
-                            <a href="#projects">Experiências</a>
-                        </div>
+                        <Col sm={12}>
+                            <div className='footer-link'>
+                                <Col sm={5}>
+                                <a href="#skills">Habilidades</a>
+                                </Col >
+                                <Col sm={5}>
+                                <a href="#projects">Experiências</a>
+                                </Col>
+                                <Col sm={2}>
+                                <a href="#contato">Contato</a>
+                                </Col>
+                            </div>
+                        </Col>
                     </Col>
 
                     <Col sm={4}>
@@ -45,6 +55,10 @@ function Footer() {
                                     </a>
                                 </div>
                         </span>
+                    </Col>
+
+                    <Col sm={12} className='footer-cop-col'>
+                        <p className='footer-cop'>© Pedro Sávio. All right reserved.</p>
                     </Col>
                 </Row>
             </Container>
