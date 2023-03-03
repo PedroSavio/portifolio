@@ -1,11 +1,7 @@
 import { Container, Col, Row } from 'react-bootstrap';
 import { TelephoneForwardFill } from 'react-bootstrap-icons'
-import logo from '../../assets/img/Logo.png'
 import navIcon1 from '../../assets/img/nav-icon1.svg';
 import navIcon4 from '../../assets/img/nav-icon4.svg';
-import {
-    BrowserRouter as Router
-} from "react-router-dom";
 
 import './style.css';
 
