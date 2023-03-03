@@ -66,6 +66,7 @@ span.social-text {
 }
 
 .footer-social a{
+    padding-top: 1.2rem;
     width: 60px;
     height: 60px;
     display: inline-flex;
