@@ -12,7 +12,7 @@ function Footer() {
         <footer className='footer'>
             <Container>
                 <Row>
-                    <Col sm={4}>
+                    <Col xs={12} sm={4} xl={4}>
                         <div className='footer-text'>
                             <a href='#home'>
                                 <span>Pedro Sávio</span>
@@ -21,23 +21,25 @@ function Footer() {
                         </div>
                     </Col>
 
-                    <Col sm={4}>
+                    <Col xs={12} sm={4} xl={4}>
                         <Col sm={12}>
                             <div className='footer-link'>
-                                <Col sm={5}>
-                                <a href="#skills">Habilidades</a>
-                                </Col >
-                                <Col sm={5}>
-                                <a href="#projects">Experiências</a>
-                                </Col>
-                                <Col sm={2}>
-                                <a href="#contato">Contato</a>
-                                </Col>
+                                <Row>
+                                    <Col xs={12} xl={5}>
+                                    <a href="#skills">Habilidades</a>
+                                    </Col >
+                                    <Col xs={12} xl={5}>
+                                    <a href="#projects">Experiências</a>
+                                    </Col>
+                                    <Col xs={12} xl={2}>
+                                    <a href="#contato">Contato</a>
+                                    </Col>
+                                </Row>
                             </div>
                         </Col>
                     </Col>
 
-                    <Col sm={4}>
+                    <Col xs={12} sm={4} xl={4}>
                         <span className='social-text'>
                                 <div className='footer-social'>
                                     <a href='https:/linkedin.com/in/pedro-sávio-souza' target="_blank">
