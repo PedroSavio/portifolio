@@ -42,10 +42,10 @@ function Footer() {
                     <Col xs={12} sm={4} xl={4}>
                         <span className='social-text'>
                                 <div className='footer-social'>
-                                    <a  href='https:/linkedin.com/in/pedro-sávio-souza' target="_blank">
+                                    <a href='https://linkedin.com/in/pedro-sávio-souza' target="_blank">
                                         <img src={navIcon1} alt='' />
                                     </a>
-                                    <a  href='https://github.com/PedroSavio' target="_blank">
+                                    <a  href='https://github.com/PedroSavio/portifolio' target="_blank">
                                         <img src={navIcon4} alt='' />
                                     </a>
                                     <a  href='tel:+5579999026900' target="_blank">

@@ -47,7 +47,7 @@ function NavBar() {
                         </Nav>
                         <span className='navbar-text'>
                             <div className='social-icon'>
-                                <a href='https:/linkedin.com/in/pedro-sávio-souza' target="_blank">
+                                <a href='https://linkedin.com/in/pedro-sávio-souza' target="_blank">
                                     <img src={navIcon1} alt='' />
                                 </a>
                                 <a href='https://github.com/PedroSavio' target="_blank">

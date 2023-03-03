@@ -86,7 +86,7 @@ function Projects() {
                                                 <h2>Desenvolvedor Back-end</h2>
                                                 <p>Startup com projeto social de saúde mental, em que utilizei as tecnologias Node.js/Express, TypeScript e MySQL.
                                                 </p>
-                                                <HashLink to='https:/linkedin.com/in/pedro-sávio-souza'>
+                                                <HashLink to='https://linkedin.com/in/pedro-sávio-souza'>
                                                     <button>
                                                         <span>Ver mais</span>
                                                         <Link45deg size={25} />
