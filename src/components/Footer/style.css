@@ -91,3 +91,7 @@ span.social-text {
 .footer-social a svg{
     margin-top:5px;
 }
+
+.pt-xs-3 {
+    padding-top: 1rem !important;
+}

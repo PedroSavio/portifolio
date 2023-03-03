@@ -8,14 +8,14 @@ import Contato from './components/Page-Contact';
 import Footer from './components/Footer';
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Fundo />
-      <Skills />
-      <Projects />
-      <Contato />
-      <Footer />
-    </div>
+      <div className="App">
+        <NavBar />
+        <Fundo />
+        <Skills />
+        <Projects />
+        <Contato />
+        <Footer />
+      </div>
   );
 }
 

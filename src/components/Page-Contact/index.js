@@ -1,10 +1,18 @@
 import { Container, Col, Row } from 'react-bootstrap';
 import { useState } from "react";
-import fotoFeedback from '../../assets/img/FotoGrande.jpg'
+import logo from '../../assets/img/Logo.png';
+
+import emailjs from '@emailjs/browser';
 
 import './style.css';
 
 function Contato() {
+
+    const paramsEmail = {
+        SERVICE_ID: 'service_2mh5bnn',
+        TEMPLATE_ID: 'template_unseyjc',
+        PUBLIC_KEY: 'tHtGPStRVfBmuKW7X'
+    }
 
     const formContato = {
         nome: '',
@@ -13,6 +21,7 @@ function Contato() {
         assunto:'',
         mensagem: ''
     }
+
 
     const [contato, setContato] = useState(formContato);
     const [botaoEnvio, setBotaoEnvio] = useState('Enviar');
@@ -27,22 +36,26 @@ function Contato() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log(paramsEmail.PUBLIC_KEY, paramsEmail.SERVICE_ID,  paramsEmail.TEMPLATE_ID )
         setBotaoEnvio("Enviando...");
-        let response = await fetch("http://localhost:5000/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json;charset=utf-8",
-          },
-          body: JSON.stringify(contato),
-        });
-        setBotaoEnvio("Send");
-        let result = await response.json();
-        setContato(formContato);
-        if (result.code === 200) {
-          setStatus({ succes: true, message: 'Message sent successfully'});
-        } else {
-          setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-        }
+        emailjs.send(paramsEmail.SERVICE_ID, paramsEmail.TEMPLATE_ID , {
+            nome: contato.nome,
+            email: contato.email,
+            telefone: contato.telefone,
+            assunto: contato.assunto,
+            mensagem: contato.mensagem
+        }, paramsEmail.PUBLIC_KEY)
+        .then(
+            (result) => {
+                console.log("Enviado", result)
+                setBotaoEnvio("Send");
+                setStatus({ succes: true, message: 'Message sent successfully'});
+                setContato(formContato);}, 
+            (error) => {
+                console.log("Não enviado", error)
+                setBotaoEnvio("Não foi possível enviar");
+                setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+            });
     }
     return (
         <section className="contato" id='contato'> 
@@ -50,7 +63,7 @@ function Contato() {
                 <Row className="align-items-center">
                     <Col size={12} md={6}>
                         <div className='imgRotate'>
-                            <img src={fotoFeedback} alt="Contate-me"/>
+                            <img src={logo} alt="Contate-me"/>
                         </div>
                     </Col>  
                     
@@ -73,7 +86,7 @@ function Contato() {
                                     </Col>
                                     <Col size={12} className="px-1">
                                         <textarea name="mensagem" placeholder="Mensagem" value={contato.mensagem} onChange={(e) => onFormUpdate('mensagem', e.target.value)} />
-                                        <button type="submit"><span>{botaoEnvio} </span></button>
+                                        <button type="submit" onClick={handleSubmit}><span>{botaoEnvio}</span></button>
                                     </Col>
                                     {
                                         status.mensagem && 

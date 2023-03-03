@@ -16,7 +16,7 @@
 }
 
 .contato img:hover{
-    transform: scale(1.3) rotate(5deg);
+    transform: scale(1.3);
 }
 
 .contato h2{

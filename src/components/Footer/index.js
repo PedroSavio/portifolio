@@ -23,16 +23,16 @@ function Footer() {
 
                     <Col xs={12} sm={4} xl={4}>
                         <Col sm={12}>
-                            <div className='footer-link'>
+                            <div className='footer-link '>
                                 <Row>
                                     <Col xs={12} xl={5}>
-                                    <a href="#skills">Habilidades</a>
+                                        <a  href="#skills">Habilidades</a>
                                     </Col >
                                     <Col xs={12} xl={5}>
-                                    <a href="#projects">Experiências</a>
+                                        <a  href="#projects">Experiências</a>
                                     </Col>
                                     <Col xs={12} xl={2}>
-                                    <a href="#contato">Contato</a>
+                                        <a href="#contato">Contato</a>
                                     </Col>
                                 </Row>
                             </div>
@@ -42,13 +42,13 @@ function Footer() {
                     <Col xs={12} sm={4} xl={4}>
                         <span className='social-text'>
                                 <div className='footer-social'>
-                                    <a href='https:/linkedin.com/in/pedro-sávio-souza' target="_blank">
+                                    <a  href='https:/linkedin.com/in/pedro-sávio-souza' target="_blank">
                                         <img src={navIcon1} alt='' />
                                     </a>
-                                    <a href='https://github.com/PedroSavio' target="_blank">
+                                    <a  href='https://github.com/PedroSavio' target="_blank">
                                         <img src={navIcon4} alt='' />
                                     </a>
-                                    <a href='tel:+5579999026900' target="_blank">
+                                    <a  href='tel:+5579999026900' target="_blank">
                                         <TelephoneForwardFill color='White' size={28}/>
                                     </a>
                                 </div>

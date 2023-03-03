@@ -63,8 +63,14 @@
     transition: 0.5s ease-in-out;
 }
 
+.foto-carousel{
+    display: flex;
+    justify-content: center;
+    margin-left: 1.0rem;
+}
+
 .corousel_text{
-    margin-left: 2.0rem;
+    margin-left: 1.0rem;
     display: flex;
     justify-content: center;
     align-items: center;
