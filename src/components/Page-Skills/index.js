@@ -49,7 +49,7 @@ function Skills() {
                                             </i>
                                             <div>
                                                 <h1 className='skills_title'>Front-end developer</h1>
-                                                <span className='skills_subtitle'> 1 ano </span>
+                                                <span className='skills_subtitle'> 2 ano </span>
                                             </div>
                                             <i className='skills_arrow'  onClick={() => setStatePannels({
                                                 ...statePannels,

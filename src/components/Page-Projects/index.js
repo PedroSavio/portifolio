@@ -4,6 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import fotoFeedback from '../../assets/img/FotoFeedback.png'
 import fotoLogin from '../../assets/img/FotoLogin.png'
 import fotoNeurometa from '../../assets/img/neurometaLogo.jpg'
+import fotoGasteMenos from '../../assets/img/GasteMenosICON.png'
 
 import {
     BrowserRouter as Router
@@ -84,7 +85,31 @@ function Projects() {
                                         <Col xs={12} className="pt-xs-3 pr-xs-1">
                                             <div className='corousel_text'>
                                                 <h2>Desenvolvedor Back-end</h2>
-                                                <p>Startup com projeto social de saúde mental, em que utilizei as tecnologias Node.js/Express, TypeScript e MySQL.
+                                                <p>Na minha atuação em uma startup com foco em saúde mental, utilizei Node.js, Express e TypeScript para desenvolver aplicações web. Implementei uma arquitetura sólida e escalável e integrei um banco de dados MySQL. Além disso, utilizei ferramentas de deploy para garantir a disponibilidade das aplicações em ambientes de produção.
+                                                </p>
+                                                <HashLink to='https://linkedin.com/in/pedro-sávio-souza'>
+                                                    <button>
+                                                        <span>Ver mais</span>
+                                                        <Link45deg size={25} />
+                                                    </button>
+                                                </HashLink>
+                                            </div>
+                                        </Col>
+                                    </Col>
+                                </div>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <div className='content_carousel'>
+                                    <Col>
+                                        <Col xs={12}>
+                                            <div className="foto-carousel">
+                                                <img src={fotoGasteMenos} alt='imagem4' />
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} className="pt-xs-3 pr-xs-1">
+                                            <div className='corousel_text'>
+                                                <h2>Desenvolvedor Full Stack</h2>
+                                                <p>Criação e desenvolvimento do Gaste Menos APP projeto  o qual trabalhei com Python para web scraping, também utilizei das tecnologias  JavaScript, HTML, CSS, Bootstrap, jQuery e Node.js. Além disso, fiz o deploy de websites no Heroku e lancei aplicativos na Google Play e Apple Store..
                                                 </p>
                                                 <HashLink to='https://linkedin.com/in/pedro-sávio-souza'>
                                                     <button>

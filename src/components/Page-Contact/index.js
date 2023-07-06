@@ -48,7 +48,7 @@ function Contato() {
         .then(
             (result) => {
                 console.log("Enviado", result)
-                setBotaoEnvio("Send");
+                setBotaoEnvio("Enviado!");
                 setStatus({ succes: true, message: 'Message sent successfully'});
                 setContato(formContato);}, 
             (error) => {
